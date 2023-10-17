@@ -1,0 +1,6 @@
+<h1>BA</h1>
+ <%if current_user%>
+     <%= link_to "Categories", groups_path, class:"d-block btn btn-success p-2" %>
+<% else %>
+   <%= render partial: "navbar" %>             
+<% end %>
