@@ -1,12 +1,11 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+<nav class="navbar">
+      <ul class="nav-bar bg-gray-700">
         <li class="nav-item">
-          <%= button_to "Login" ,user_session_path, class: "nav-link active" %>
+          <%= link_to "Login" ,user_session_path, class: "login-link"%>
         </li>
+        <span class="line">|</span>
          <li class="nav-item">
-          <%= button_to "Sign up",new_user_registration_path, class: "nav-link active" %>
+          <%= link_to "Sign up",new_user_registration_path, class: "login-link" %>
         </li>
       </ul>
-    </div>
 </nav>

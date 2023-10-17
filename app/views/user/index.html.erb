@@ -1,6 +1,6 @@
-<h1>BA</h1>
- <%if current_user%>
+<%if current_user%>
      <%= link_to "Categories", groups_path, class:"d-block btn btn-success p-2" %>
 <% else %>
-   <%= render partial: "navbar" %>             
+   <%= render partial: "navbar" %>      
+   <h1 class="w-title">Welcome to BudgetMinder</h1>       
 <% end %>
