@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_10_16_164747) do
+ActiveRecord::Schema[7.0].define(version: 2023_10_17_192546) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -23,11 +23,22 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_16_164747) do
     t.index ["author_id"], name: "index_entities_on_author_id"
   end
 
+  create_table "entity_groups", force: :cascade do |t|
+    t.bigint "entity_id", null: false
+    t.bigint "group_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["entity_id"], name: "index_entity_groups_on_entity_id"
+    t.index ["group_id"], name: "index_entity_groups_on_group_id"
+  end
+
   create_table "groups", force: :cascade do |t|
     t.string "name"
     t.string "icon"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "user_id", null: false
+    t.index ["user_id"], name: "index_groups_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -48,4 +59,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_16_164747) do
   end
 
   add_foreign_key "entities", "users", column: "author_id"
+  add_foreign_key "entity_groups", "entities"
+  add_foreign_key "entity_groups", "groups"
+  add_foreign_key "groups", "users"
 end
