@@ -1,0 +1,16 @@
+
+<% @groups.each do | group|  %>
+    <%= link_to group, class:'category-link'  do%>
+    <div class="category-container">
+        <div class="user-icon">
+        <%= image_tag(group.icon, class: "icon", alt: "#{group.name}") %>
+        </div>
+        <div>
+        <%= group.name %>
+        </div>
+    </div>
+    <div>
+      $<%= group.total_amount %>
+    </div>
+  <% end %>
+<% end %>
