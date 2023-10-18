@@ -35,7 +35,20 @@
     margin-left: 60px;
 }
 
+.btn-container {
+    display: flex;
+    gap: 15px;
+}
+
 .btn {
     background-color: #3778c2;
     color: white;
 }
+
+.back-btn {
+    background-color: #3778c2;
+    color: white;
+    width: 30%;
+    height: 40px;
+}
+
