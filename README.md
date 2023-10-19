@@ -50,7 +50,7 @@ BUdget App is a web application crafted with Ruby on Rails and powered by Postgr
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Live Demo <a name="live-demo"></a>
- [Live Demo Link:](https://github.com/manzitresor/book_store.git)
+ [Live Demo Link:](https://budget-app-u4o6.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
