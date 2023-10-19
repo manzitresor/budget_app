@@ -140,7 +140,7 @@ If you like this project,
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank the Microverse community.
+I would like to thank the Microverse community.I would also like to thank [Gregoire Vella](https://www.behance.net/gregoirevella) on Behance whose design this application is based on.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
