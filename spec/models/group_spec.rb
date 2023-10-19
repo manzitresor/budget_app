@@ -3,8 +3,6 @@ require 'rails_helper'
 RSpec.describe Group, type: :model do
   let(:user) { User.new(name: 'Manzi', email: 'manzitre@mail.com', password: '123456') }
   let(:group) { Group.new(name: 'Shopping', icon: 'https://images.pexels.com/photos/53621/calculator-calculation-insurance-finance-53621.jpeg', user_id: user.id) }
-
-
   describe 'Validations' do
     it 'should allow valid name' do
       group.name = nil
