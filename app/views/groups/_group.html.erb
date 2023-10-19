@@ -1,6 +1,6 @@
 
 <% @groups.each do | group|  %>
-    <%= link_to group, class:'category-link'  do%>
+    <%= link_to group_path(id: group), class:'category-link'  do%>
     <div class="category-container">
         <div class="user-icon">
         <%= image_tag(group.icon, class: "icon", alt: "#{group.name}") %>
