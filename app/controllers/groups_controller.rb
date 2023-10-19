@@ -6,6 +6,10 @@ class GroupsController < ApplicationController
     def new
         @group = Group.new
     end
+    def show
+        @group = Group.find(params[:id])
+        @entities = @group.entities.order(created_at: :desc)
+    end
     def create
         @group = Group.new(group_params)
         @group.user_id = current_user.id
@@ -19,6 +23,6 @@ class GroupsController < ApplicationController
     private
     
     def group_params
-        params.require(:group).permit(:name,:icon)
+        params.require(:group).permit(:name,:icon,:author_id)
     end
 end
