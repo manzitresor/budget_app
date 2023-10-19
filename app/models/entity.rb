@@ -1,7 +1,7 @@
 class Entity < ApplicationRecord
-    belongs_to :author, class_name: 'User'
-    has_many :entity_groups
-    has_many :groups, through: :entity_groups
+  belongs_to :author, class_name: 'User'
+  has_many :entity_groups
+  has_many :groups, through: :entity_groups
 
   validates :name, presence: true
   validates :amount, presence: true, numericality: { greater_than_or_equal_to: 0 }
