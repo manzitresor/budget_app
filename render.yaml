@@ -1,6 +1,6 @@
 databases:
   - name: micronaut
-    databaseName: budget_app
+    databaseName: budget_app_3v5e
     user: manzi
 
 services:
