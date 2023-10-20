@@ -1,4 +1,5 @@
 <div class="transaction">
+<h1 class='text-success mb-0'>$ <%= @group.total_amount %></h1>
 <% if @entities.any? %>
   <% @entities.each do |entity| %>
     <div class="card mb-4">
