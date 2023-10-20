@@ -55,7 +55,7 @@ BUdget App is a web application crafted with Ruby on Rails and powered by Postgr
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Video Presentation <a name="live-demo"></a>
- [Live Demo Link:](https://github.com/manzitresor/book_store.git)
+ [Video Presentation Link:](https://www.loom.com/share/5b2411ad5df24014a5b6a6bd6fc1df77?sid=500b8076-bbb8-4bfb-b20b-8ce3da0e6499)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
