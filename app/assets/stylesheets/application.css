@@ -119,3 +119,13 @@
 .transaction {
   margin: 10px;
 }
+
+.amount-card {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.tot-amount {
+  font-weight: bold;
+}
